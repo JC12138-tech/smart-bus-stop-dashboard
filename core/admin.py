@@ -1,5 +1,6 @@
 from django.contrib import admin
-from .models import Bus, BusStop, GPSRecord
+from .models import Bus, BusStop, GPSRecord, CrowdingRecord, ETARecord
+
 
 
 @admin.register(Bus)
@@ -18,3 +19,15 @@ class BusStopAdmin(admin.ModelAdmin):
 class GPSRecordAdmin(admin.ModelAdmin):
     list_display = ("bus", "timestamp", "speed")
     list_filter = ("bus",)
+
+
+@admin.register(CrowdingRecord)
+class CrowdingRecordAdmin(admin.ModelAdmin):
+    list_display = ("bus", "timestamp", "level", "occupancy_ratio")
+    list_filter = ("bus", "level")
+
+
+@admin.register(ETARecord)
+class ETARecordAdmin(admin.ModelAdmin):
+    list_display = ("bus", "stop", "source_timestamp", "eta_minutes", "distance_m", "computed_at")
+    list_filter = ("bus", "stop")

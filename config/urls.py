@@ -16,7 +16,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from core.views import home, upload_csv
+from core.views import home, upload_csv, dashboard
 
 urlpatterns = [
     path("", home, name="home"),
@@ -24,3 +24,20 @@ urlpatterns = [
     path("admin/", admin.site.urls),
 ]
 
+
+urlpatterns = [
+    path("", home, name="home"),
+    path("upload/", upload_csv, name="upload_csv"),
+    path("dashboard/", dashboard, name="dashboard"),
+    path("admin/", admin.site.urls),
+]
+
+from core.views import home, upload_csv, dashboard, export_xlsx
+
+urlpatterns = [
+    path("", home, name="home"),
+    path("upload/", upload_csv, name="upload_csv"),
+    path("dashboard/", dashboard, name="dashboard"),
+    path("export.xlsx", export_xlsx, name="export_xlsx"),
+    path("admin/", admin.site.urls),
+]

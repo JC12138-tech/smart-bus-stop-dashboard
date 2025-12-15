@@ -1,4 +1,4 @@
-bus_id,timestamp,lat,lon,speed,capacity,stop_id,stop_name,stop_lat,stop_lon
-71A,2025-12-15T01:00:00Z,40.4433,-79.9436,22.5,60,S001,Gates Center,40.4440,-79.9440
-71A,2025-12-15T01:01:00Z,40.4435,-79.9439,21.0,60,S001,Gates Center,40.4440,-79.9440
-P3,2025-12-15T01:00:30Z,40.4400,-79.9500,18.2,50,S002,Tepper,40.4410,-79.9490
+bus_id,timestamp,lat,lon,speed,capacity,weight,stop_id,stop_name,stop_lat,stop_lon
+71A,2025-12-15T01:00:00Z,40.4433,-79.9436,22.5,60,2100,S001,Gates Center,40.4440,-79.9440
+71A,2025-12-15T01:01:00Z,40.4435,-79.9439,21.0,60,2700,S001,Gates Center,40.4440,-79.9440
+P3,2025-12-15T01:00:30Z,40.4400,-79.9500,18.2,50,1500,S002,Tepper,40.4410,-79.9490
