@@ -26,4 +26,5 @@ jobs:
         uses: docker/build-push-action@v5
         with:
           push: true
-          tags: ghcr.io/${{ github.repository }}:latest
+          tags: ghcr.io/jc12138-tech/smart-bus-stop-dashboard:latest
+
